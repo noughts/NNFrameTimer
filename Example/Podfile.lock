@@ -1,0 +1,14 @@
+PODS:
+  - NNFrameTimer (0.1.0)
+
+DEPENDENCIES:
+  - NNFrameTimer (from `../`)
+
+EXTERNAL SOURCES:
+  NNFrameTimer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NNFrameTimer: eb1acb7b5bfba6591e623db7ce7749c6b251c72f
+
+COCOAPODS: 0.37.2
