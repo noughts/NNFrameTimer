@@ -24,6 +24,7 @@
 	if( _running ){
 		return;
 	}
+	
 	_link = [CADisplayLink displayLinkWithTarget:self selector:@selector(update:)];
 //	[_link addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
 	[_link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
