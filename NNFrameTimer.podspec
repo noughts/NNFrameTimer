@@ -10,12 +10,9 @@
 Pod::Spec.new do |s|
   s.name             = "NNFrameTimer"
   s.version          = "1.0.0"
-  s.summary          = "A short description of NNFrameTimer."
+  s.summary          = "hoge"
   s.description      = <<-DESC
-                       An optional longer description of NNFrameTimer
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       fuga
                        DESC
   s.homepage         = "https://github.com/noughts/NNFrameTimer"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
