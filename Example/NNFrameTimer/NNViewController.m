@@ -7,10 +7,7 @@
 //
 
 #import "NNViewController.h"
-
-@interface NNViewController ()
-
-@end
+#import <NNFrameTimer/NNFrameTimer.h>
 
 @implementation NNViewController
 
@@ -18,12 +15,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	
+	NNFrameTimer* timer = [[NNFrameTimer alloc] initWithInterval:60 target:self selector:@selector(hoge:)];
+	[timer start];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(void)hoge:(NNFrameTimer*)timer{
+	NSLog( @"%@", timer );
+	NSLog( @"%@", @(timer.currentCount) );
 }
+
 
 @end
