@@ -8,14 +8,15 @@
 
 #import "NNViewController.h"
 #import <NNFrameTimer/NNFrameTimer.h>
-#import <NBULog.h>
+#import <NBULogStub.h>
 
 @implementation NNViewController{
 	NNFrameTimer* _timer;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
+	[NBULog setKitLogLevel:DDLogLevelVerbose];
+	
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
