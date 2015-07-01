@@ -36,7 +36,7 @@ static NSMutableArray* _frameTimers;
 }
 
 -(void)dealloc{
-//	NBULogVerbose(@"dealloc");
+	NBULogVerbose(@"dealloc");
 	[self invalidate];
 }
 
