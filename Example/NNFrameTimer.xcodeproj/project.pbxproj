@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4ADD535DF3AB989CF19677B9 /* Pods_NNFrameTimer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EC57E881128C3F6ACF7CAE /* Pods_NNFrameTimer_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +21,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		E00FF611B2EC8868D11268F6 /* Pods_NNFrameTimer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85756935C7E28AA687702912 /* Pods_NNFrameTimer_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8BB0AF9658D43A84FE919D12 /* libPods-NNFrameTimer_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520A6B08434F372946F43F07 /* libPods-NNFrameTimer_Example.a */; };
+		C9F988847FA12FDD8E3AD465 /* libPods-NNFrameTimer_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4373EB3FDD445276A482DAA0 /* libPods-NNFrameTimer_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,9 @@
 
 /* Begin PBXFileReference section */
 		1AB9A38E5D94EB94225CF835 /* Pods-NNFrameTimer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNFrameTimer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNFrameTimer_Example/Pods-NNFrameTimer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4373EB3FDD445276A482DAA0 /* libPods-NNFrameTimer_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNFrameTimer_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		458549AA8A84D18151ED30F3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		520A6B08434F372946F43F07 /* libPods-NNFrameTimer_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNFrameTimer_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* NNFrameTimer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNFrameTimer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,10 +60,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		737BA0757549132CA10099E6 /* Pods-NNFrameTimer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNFrameTimer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNFrameTimer_Tests/Pods-NNFrameTimer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		85756935C7E28AA687702912 /* Pods_NNFrameTimer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNFrameTimer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8DAC50E353E648DCBDD1D17B /* Pods-NNFrameTimer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNFrameTimer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNFrameTimer_Tests/Pods-NNFrameTimer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		94EC57E881128C3F6ACF7CAE /* Pods_NNFrameTimer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNFrameTimer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCDC7C74A02A0B67B1DBF46 /* Pods-NNFrameTimer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNFrameTimer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNFrameTimer_Example/Pods-NNFrameTimer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EB534BCC1D3C149876016A78 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F9472A99FAC9110A580C8D87 /* NNFrameTimer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NNFrameTimer.podspec; path = ../NNFrameTimer.podspec; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				4ADD535DF3AB989CF19677B9 /* Pods_NNFrameTimer_Example.framework in Frameworks */,
+				8BB0AF9658D43A84FE919D12 /* libPods-NNFrameTimer_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				E00FF611B2EC8868D11268F6 /* Pods_NNFrameTimer_Tests.framework in Frameworks */,
+				C9F988847FA12FDD8E3AD465 /* libPods-NNFrameTimer_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +121,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				94EC57E881128C3F6ACF7CAE /* Pods_NNFrameTimer_Example.framework */,
-				85756935C7E28AA687702912 /* Pods_NNFrameTimer_Tests.framework */,
+				520A6B08434F372946F43F07 /* libPods-NNFrameTimer_Example.a */,
+				4373EB3FDD445276A482DAA0 /* libPods-NNFrameTimer_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,7 +204,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				39AEBC0D13E195DCA7C63783 /* Embed Pods Frameworks */,
 				97BEBE7FCDDF7F2E2589E067 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -224,7 +223,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				2F0C6D4FA2F2FFAC22BCB087 /* Embed Pods Frameworks */,
 				3F23158F2876DD9B4CF41C71 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -293,36 +291,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F0C6D4FA2F2FFAC22BCB087 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNFrameTimer_Tests/Pods-NNFrameTimer_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		39AEBC0D13E195DCA7C63783 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNFrameTimer_Example/Pods-NNFrameTimer_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3F23158F2876DD9B4CF41C71 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
