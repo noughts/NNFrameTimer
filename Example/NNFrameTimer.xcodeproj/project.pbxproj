@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DBA58BA1B438D1E002ECCF6 /* MyTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA58B91B438D1E002ECCF6 /* MyTimer.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 		1AB9A38E5D94EB94225CF835 /* Pods-NNFrameTimer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNFrameTimer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNFrameTimer_Example/Pods-NNFrameTimer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4373EB3FDD445276A482DAA0 /* libPods-NNFrameTimer_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNFrameTimer_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		458549AA8A84D18151ED30F3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4DBA58B81B438D1E002ECCF6 /* MyTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTimer.h; sourceTree = "<group>"; };
+		4DBA58B91B438D1E002ECCF6 /* MyTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTimer.m; sourceTree = "<group>"; };
 		520A6B08434F372946F43F07 /* libPods-NNFrameTimer_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNFrameTimer_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* NNFrameTimer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNFrameTimer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -137,6 +140,8 @@
 				6003F5A6195388D20070C39A /* NNViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				4DBA58B81B438D1E002ECCF6 /* MyTimer.h */,
+				4DBA58B91B438D1E002ECCF6 /* MyTimer.m */,
 			);
 			name = "Example for NNFrameTimer";
 			path = NNFrameTimer;
@@ -361,6 +366,7 @@
 				6003F59E195388D20070C39A /* NNAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* NNViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				4DBA58BA1B438D1E002ECCF6 /* MyTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

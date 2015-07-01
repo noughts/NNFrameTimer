@@ -12,6 +12,17 @@
     SEL _selector;
 }
 
+static NSMutableArray* _frameTimers;
+
++(instancetype)scheduledTimerWithTimeInterval:(NSUInteger)interval target:(id)target selector:(SEL)selector{
+	NNFrameTimer* timer = [[NNFrameTimer alloc] initWithInterval:interval target:target selector:selector];
+	if( !_frameTimers ){
+		_frameTimers = [NSMutableArray new];
+	}
+	[_frameTimers addObject:timer];
+	return timer;
+}
+
 -(instancetype)initWithInterval:(NSInteger)interval target:(id)target selector:(SEL)selector{
 	if( self = [super init]){
 		_interval = interval;
@@ -31,6 +42,7 @@
 
 
 -(void)invalidate{
+	[_frameTimers removeObject:self];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:@"onEnterFrame" object:[CADisplayLink sharedLink]];
 	_running = NO;
 }
