@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'NNFrameTimer_Example', :exclusive => true do
   pod "NNFrameTimer", :path => "../"
+  pod "NBULog"
 end
 
 target 'NNFrameTimer_Tests', :exclusive => true do
