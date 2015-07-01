@@ -1,6 +1,5 @@
 #import "NNFrameTimer.h"
 #import "CADisplayLink+NNFrameTimer.h"
-#import <NBULog.h>
 
 @implementation NNFrameTimer{
 	NSInteger _currentCount;
@@ -36,7 +35,7 @@ static NSMutableArray* _frameTimers;
 }
 
 -(void)dealloc{
-	NBULogVerbose(@"dealloc");
+//	NBULogVerbose(@"dealloc");
 	[self invalidate];
 }
 
