@@ -1,6 +1,6 @@
 #import "NNFrameTimer.h"
 #import "CADisplayLink+NNFrameTimer.h"
-#import <NBULog/NBULog.h>
+#import "NNFrameTimerPrivate.h"
 
 @implementation NNFrameTimer{
 	NSInteger _currentCount;

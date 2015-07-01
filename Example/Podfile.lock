@@ -9,7 +9,7 @@ PODS:
     - CocoaLumberjack/Default
   - NBULog (1.2.4):
     - CocoaLumberjack (>= 2.0.0)
-  - NNFrameTimer (2.0.4)
+  - NNFrameTimer (2.0.11)
 
 DEPENDENCIES:
   - NBULog
@@ -22,6 +22,6 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
   NBULog: 4003be6706b97a7e376ab4171c666ac7c2fbc2b2
-  NNFrameTimer: 7d22c6e14eb0fe8289e129a284d7b2161389a910
+  NNFrameTimer: 11a18d943be1216b707b73e8b388e9cfdf5e7136
 
 COCOAPODS: 0.37.2

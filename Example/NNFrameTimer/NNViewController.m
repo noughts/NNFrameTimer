@@ -8,6 +8,7 @@
 
 #import "NNViewController.h"
 #import <NNFrameTimer/NNFrameTimer.h>
+#import <NBULog.h>
 
 @implementation NNViewController{
 	NNFrameTimer* _timer;
