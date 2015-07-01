@@ -31,7 +31,7 @@
 -(void)hoge:(NNFrameTimer*)timer{
 	NSLog( @"%@", timer );
 	NSLog( @"%@", @(timer.currentCount) );
-	if( timer.currentCount == 5 ){
+	if( timer.currentCount == 2 ){
 		[timer invalidate];
 	}
 }
