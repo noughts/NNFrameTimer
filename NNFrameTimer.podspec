@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "NNFrameTimer"
-  s.version          = "2.0.4"
+  s.version          = "2.0.5"
   s.summary          = "hoge"
   s.description      = <<-DESC
                        fuga
