@@ -14,6 +14,7 @@
 
 static NSMutableArray* _frameTimers;
 
+/// タイマー作成。直接initを呼んで作成すると、どこからも参照がない場合にすぐにreleaseされてしまうので、NSTimerにならってstaticメソッドからインスタンスを作成し、クラスでインスタンスを保持する
 +(instancetype)scheduledTimerWithTimeInterval:(NSUInteger)interval target:(id)target selector:(SEL)selector{
 	NNFrameTimer* timer = [[NNFrameTimer alloc] initWithInterval:interval target:target selector:selector];
 	if( !_frameTimers ){

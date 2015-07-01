@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onStartButtonTap:" destination="whP-gf-Uak" eventType="touchUpInside" id="TcJ-DY-hsT"/>
+                                    <action selector="onButtonTap:" destination="whP-gf-Uak" eventType="touchUpInside" id="3ku-Bw-P52"/>
                                 </connections>
                             </button>
                         </subviews>

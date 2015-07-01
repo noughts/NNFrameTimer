@@ -8,9 +8,9 @@
 
 #import "NNViewController.h"
 #import <NNFrameTimer/NNFrameTimer.h>
-#import "MyTimer.h"
 
 @implementation NNViewController{
+	NNFrameTimer* _timer;
 }
 
 - (void)viewDidLoad
@@ -18,19 +18,21 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
+	_timer = [NNFrameTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(hoge:)];
 	NNFrameTimer* timer2 = [NNFrameTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(hoge:)];
-	
-//	NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimer:) userInfo:nil repeats:YES];
 }
 
--(void)onTimer:(MyTimer*)timer{
-	NSLog( @"%@", timer );
-}
 
+-(IBAction)onButtonTap:(id)sender{
+	[_timer invalidate];
+}
 
 -(void)hoge:(NNFrameTimer*)timer{
 	NSLog( @"%@", timer );
 	NSLog( @"%@", @(timer.currentCount) );
+	if( timer.currentCount == 5 ){
+		[timer invalidate];
+	}
 }
 
 
