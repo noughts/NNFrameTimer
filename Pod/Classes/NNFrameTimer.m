@@ -51,7 +51,7 @@ static NSMutableArray* _frameTimers;
 
 -(void)update:(id)sender{
 	if( _counter % _interval == 0 ){
-		if( [_target canPerformAction:_selector withSender:self] ){
+		if( [_target respondsToSelector:_selector] ){
 			#pragma clang diagnostic push
 			#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 			[_target performSelector:_selector withObject:self];
