@@ -8,5 +8,6 @@
 -(void)invalidate;
 -(NSInteger)currentCount;
 -(BOOL)running;
+-(CGFloat)duration;
 
 @end

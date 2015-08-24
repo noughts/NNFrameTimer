@@ -20,8 +20,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
-	_timer = [NNFrameTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(hoge:)];
-	[NNFrameTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(hoge:)];/// <- NSTimerと同じようにクラスで参照を保持しているので、timerをインスタンス変数にしなくても動作します
+	_timer = [NNFrameTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(hoge1:)];
+//	[NNFrameTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(hoge:)];/// <- NSTimerと同じようにクラスで参照を保持しているので、timerをインスタンス変数にしなくても動作します
 }
 
 
@@ -29,9 +29,19 @@
 	[_timer invalidate];
 }
 
+-(void)hoge1:(NNFrameTimer*)timer{
+	NSLog( @"%@", timer );
+	NSLog( @"%@", @(timer.currentCount) );
+	NSLog( @"%@", @(timer.duration) );
+	if( timer.currentCount == 60*2 ){
+		[timer invalidate];
+	}
+}
+
 -(void)hoge:(NNFrameTimer*)timer{
 	NSLog( @"%@", timer );
 	NSLog( @"%@", @(timer.currentCount) );
+	NSLog( @"%@", @(timer.duration) );
 	if( timer.currentCount == 2 ){
 		[timer invalidate];
 	}
