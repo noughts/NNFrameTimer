@@ -8,6 +8,8 @@
 -(void)invalidate;
 -(NSInteger)currentCount;
 -(BOOL)running;
+
+/// タイマーの経過時間
 -(CGFloat)duration;
 
 @end
