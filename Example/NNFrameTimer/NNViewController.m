@@ -21,7 +21,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 	
 	_timer = [NNFrameTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(hoge:)];
-	NNFrameTimer* timer2 = [NNFrameTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(hoge:)];
+	[NNFrameTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(hoge:)];/// <- NSTimerと同じようにクラスで参照を保持しているので、timerをインスタンス変数にしなくても動作します
 }
 
 

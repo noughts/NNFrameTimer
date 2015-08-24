@@ -1,8 +1,8 @@
 #import "NNFrameTimer.h"
-#import "CADisplayLink+NNFrameTimer.h"
 #import <NBULogStub.h>
 
 @implementation NNFrameTimer{
+	CADisplayLink* _displayLink;
 	NSInteger _currentCount;
 	BOOL _running;
 	
@@ -29,8 +29,10 @@ static NSMutableArray* _frameTimers;
 		_interval = interval;
 		_target = target;
 		_selector = selector;
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(update:) name:@"onEnterFrame" object:[CADisplayLink sharedLink]];
 		_running = YES;
+		
+		_displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(update:)];
+		[_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
 	}
 	return self;
 }
@@ -43,9 +45,12 @@ static NSMutableArray* _frameTimers;
 
 
 -(void)invalidate{
-	[_frameTimers removeObject:self];
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:@"onEnterFrame" object:[CADisplayLink sharedLink]];
-	_running = NO;
+	if( [_frameTimers containsObject:self] ){
+		[_frameTimers removeObject:self];
+		[_displayLink removeFromRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+		[_displayLink invalidate];
+		_running = NO;
+	}
 }
 
 
