@@ -1,5 +1,5 @@
 #import "NNFrameTimer.h"
-#import <NBULogStub.h>
+#import "NBULogStub.h"
 
 @implementation NNFrameTimer{
 	CADisplayLink* _displayLink;
