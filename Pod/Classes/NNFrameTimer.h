@@ -10,6 +10,6 @@
 -(BOOL)running;
 
 /// タイマーの経過時間
--(CGFloat)duration;
+-(CGFloat)elapsedTime;
 
 @end

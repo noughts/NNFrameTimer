@@ -32,7 +32,7 @@
 -(void)hoge1:(NNFrameTimer*)timer{
 	NSLog( @"%@", timer );
 	NSLog( @"%@", @(timer.currentCount) );
-	NSLog( @"%@", @(timer.duration) );
+	NSLog( @"%@", @(timer.elapsedTime) );
 	if( timer.currentCount == 60*2 ){
 		[timer invalidate];
 	}
@@ -41,7 +41,7 @@
 -(void)hoge:(NNFrameTimer*)timer{
 	NSLog( @"%@", timer );
 	NSLog( @"%@", @(timer.currentCount) );
-	NSLog( @"%@", @(timer.duration) );
+	NSLog( @"%@", @(timer.elapsedTime) );
 	if( timer.currentCount == 2 ){
 		[timer invalidate];
 	}

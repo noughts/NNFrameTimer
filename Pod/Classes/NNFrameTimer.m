@@ -4,7 +4,7 @@
 @implementation NNFrameTimer{
 	CADisplayLink* _displayLink;
 	NSInteger _currentCount;
-	CGFloat _duration;
+	CGFloat _elapsedTime;
 	BOOL _running;
 	
 	NSInteger _counter;
@@ -56,7 +56,7 @@ static NSMutableArray* _frameTimers;
 
 
 -(void)update:(CADisplayLink*)sender{
-	_duration += sender.duration;
+	_elapsedTime += sender.duration;
 	if( _counter % _interval == 0 ){
 		if( [_target respondsToSelector:_selector] ){
 			#pragma clang diagnostic push
@@ -69,8 +69,8 @@ static NSMutableArray* _frameTimers;
 	_counter++;
 }
 
--(CGFloat)duration{
-	return _duration;
+-(CGFloat)elapsedTime{
+	return _elapsedTime;
 }
 
 -(NSInteger)currentCount{
